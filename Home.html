@@ -15,12 +15,88 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&family=Lora:ital,wght@1,600&family=Urbanist:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" integrity="sha512-siarrzI1u3pCqFG2LEzi87McrBmq6Tp7juVsdmGY1Dr8Saw+ZBAzDzrGwX3vgxX1NkioYNCFOVC0GpDPss10zQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" integrity="sha512-P9pgMgcSNlLb4Z2WAB2sH5KBKGnBfyJnq+bhcfLCFusrRc4XdXrhfDluBl/usq75NF5gTDIMcwI1GaG5gju+Mw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/v4-font-face.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/regular.min.css" integrity="sha512-rOTVxSYNb4+/vo9pLIcNAv9yQVpC8DNcFDWPoc+gTv9SLu5H8W0Dn7QA4ffLHKA0wysdo6C5iqc+2LEO1miAow==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/v5-font-face.min.css" integrity="sha512-5zrDFDfoCqAqA6xPCDWHHy8cOXlRGgCy+/wh4eUwzJXAwyvBeBzCJ4AqVlasi+Dxr5b9qabJw67ocz+qsax4eQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+</link>  
+  </head>
 <body>
-  <nav class="navbar mynavbar navbar-expand-lg bg-body-tertiary">
+  
+  <nav id="" class="navbar  navbar-expand-lg bg-body-tertiary">
     <div class="container ">
-      <div class="side-nav-button my-bars-btn p-2 me-3 text-dark">
-        <button class="button"><i class="fa-solid fa-bars bars"></i></button>
+      <div class="side-nav-button mynavbar my-bars-btn p-2 me-3 text-dark">
+        
+          <button class="btn btn-primary my-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="fa-solid fa-bars bars"></i></button>
+
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">A best Knowledge Site</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body ">
+              <ul class="nav-list">
+                <li class="nav-list-item widthbdhao">
+                  <i class="fa-solid fa-house"></i>
+                  <span class="icon-side-text ">
+                    <a href="">Home</a>
+                  </span>
+                </li>
+      
+                <li class="nav-list-item">
+                  <i class="fa-solid fa-people-group"></i>
+                  <span>
+                    <a href="">Community</a>
+                  </span>
+                </li>
+      
+                <li class="nav-list-item">
+                  <i class="fa-solid fa-users"></i>
+                  <span>
+                    <a href="">users</a>
+                  </span>
+                </li>
+      
+                <li class="nav-list-item ">
+                  <i class="fa-solid fa-user"></i>
+                  <span>
+                    <a href="">user profile </a>
+                  </span>
+                </li>
+      
+                <li class="nav-list-item">
+                  <i class="fas fa-question-circle"></i>
+                  <span>
+                    <a href="">FAQs</a>
+                  </span>
+                </li>
+      
+                <li class="nav-list-item">
+                  <i class="fa-solid fa-phone"></i>
+                  <span>
+                    <a href="">Contact us</a>
+                  </span>
+                </li>
+      
+                
+      
+                <li class="nav-list-item">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>
+                    <a href="">About Us</a>
+                  </span>
+                </li>
+
+                <li class="nav-list-item ">
+                  <i class="fa-solid fa-user"></i>
+                  <span>
+                    <a href="">user profile </a>
+                  </span>
+                </li>
+      
+              </ul>
+            </div>
+          </div>
       </div>
       <div class="logo">
         <a class="navbar-brand" href="#"> <img src="images/a-logo-for-website-having-Q-of-color-red--with-background-of--brain-border.png" alt="Bootstrap" width="35" height="35">Quorum</a>
@@ -29,7 +105,7 @@
         <span class="navbar-toggler-icon"></span>
       </button></div>
       
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse side-nav-content" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -52,10 +128,24 @@
             <a class="nav-link disabled" aria-disabled="true">Disabled</a>
           </li>
         </ul>
-        <form class="d-flex" role="search">
+        <form class="d-flex " role="search">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-outline-success mysearch" type="submit">Search</button>
         </form>
+
+        <div class="flex-shrink-0 dropdown myprofile">
+          <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small shadow">
+            <li><a class="dropdown-item" href="#">New project...</a></li>
+            <li><a class="dropdown-item" href="#">Settings</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sign out</a></li>
+          </ul>
+        </div>
+        
       </div>
     </div>
   </nav>
@@ -73,30 +163,25 @@
           </li>
 
           <li class="nav-list-item">
-            <i></i>
+            <i class="fa-solid fa-people-group"></i>
             <span>
               <a href="">Community</a>
             </span>
           </li>
 
           <li class="nav-list-item">
-            <i></i>
+            <i class="fa-solid fa-users"></i>
             <span>
               <a href="">users</a>
             </span>
           </li>
 
-          <li class="nav-list-item">
-            <i></i>
-            <span>
-              <a href="">user profile</a>
-            </span>
-          </li>
+          
 
           <li class="nav-list-item">
-            <i></i>
+            <i class="fas fa-question-circle"></i>
             <span>
-              <a href="">Tags</a>
+              <a href="">FAQs</a>
             </span>
           </li>
 
@@ -116,16 +201,34 @@
             </span>
           </li>
 
+          <li class="nav-list-item ">
+            <i class="fa-solid fa-user"></i>
+            <span>
+              <a href="./teams.html">Our Team </a>
+            </span>
+          </li>
+
         </ul>
       </div>
     </app-side-nav></div>
 
     <div class="display-area">
-      <p>main area</p>
+      <div class="grid-container">
+        <div class="grid-item">1</div>
+        <div class="grid-item2">2
+          
+        </div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+      </div>
+    </div>
+
+    <div class="right-side-section">
+
     </div>
   </main>
   <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
     
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </html>

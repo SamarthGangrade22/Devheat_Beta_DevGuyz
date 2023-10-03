@@ -1,6 +1,7 @@
 body{
     font-family: 'Urbanist', sans-serif;
     background-color: lightgray;
+    overflow-x: hidden;
 }
 .side-nav-button{
     display: flex;
@@ -19,8 +20,12 @@ body{
     align-items: center;
 }
 .mynavbar{
-    z-index: 2;
+    position:sticky;
+    z-index: 3;
     background-color: white;
+}
+#mynavid{
+    position: sticky;
 }
 
 img{
@@ -43,12 +48,12 @@ img{
 main{
     position: absolute;
     width: 100%;
-    top: 4rem;
+    top: 4.3rem;
     z-index: 1;
 }
 app-side-nav{
     border-top: 1px solid white;
-    position: absolute;
+    position: fixed;
     border: 1px solid black;
     left: 0rem;
     width: 250px;
@@ -57,7 +62,7 @@ app-side-nav{
     background-color:white;
 }
 .side-nav-content{
-    brder: 1px solid black;
+    borer: 1px solid black;
     width: 14rem;
     margin-left: 10px;
     margin-right: 10px;
@@ -96,9 +101,9 @@ app-side-nav{
     width: 100px;
     text-transform: capitalize;
 }
-
 span>a{
     text-decoration: none;
+    color: black;
 
 }
 .display-area{
@@ -106,12 +111,39 @@ span>a{
     position: absolute;
     left: 250px;
     width: calc(100% - 250px);
-    margin-left: .7rem;
+    margin-left: .3rem;
     margin-top: .2rem;
     background-color: white;
     height: 100vh;
 }
+.my-button{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+.mysearch{
+    border:1px solid black;
+   
+    background-color: white;
+}
+.mysearch:hover{
+    background-color: #3085C3;
+}
 
+
+.myprofile{
+    margin-left: 2rem;
+}
+.grid-container{
+    position: relative;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.grid-item2{
+    
+}
 @media(max-width:987px){
     .transform{
         transform: translateX(-250px);

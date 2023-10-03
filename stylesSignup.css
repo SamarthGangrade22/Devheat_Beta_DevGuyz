@@ -80,7 +80,7 @@ button,input[type="submit"]{
 }
 .login .form-login{
     background-image: linear-gradient(rgba(0.3,0,0,0.0),rgba(0,0,0,0.4)),
-    url("./images/Sign\ up-cuate.png");
+    url(./images/Sign\ up-cuate.png);
     background-size: cover;
     background-position: center;
 }
