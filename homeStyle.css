@@ -20,7 +20,7 @@ body{
     align-items: center;
 }
 .mynavbar{
-    position:sticky;
+    position: relative;
     z-index: 3;
     background-color: white;
 }
@@ -114,7 +114,7 @@ span>a{
     margin-left: .3rem;
     margin-top: .2rem;
     background-color: white;
-    height: 100vh;
+    
 }
 .my-button{
     border: 1px solid black;
@@ -134,14 +134,27 @@ span>a{
 .myprofile{
     margin-left: 2rem;
 }
-.grid-container{
-    position: relative;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 45rem;
+    align-items: center;
+    justify-content: center;
 }
-.grid-item2{
+.flex-box{
+    display: flex;
+    height: 15rem;
+    align-items: center;
+    justify-content: center;
+}
+.right-side-section{
+    width: 16.5rem;
+    height: 18rem;
+    background-color: white;
+    border: 1px solid black;
+    left: 61.2rem;
+    position: relative;
     
 }
 @media(max-width:987px){
