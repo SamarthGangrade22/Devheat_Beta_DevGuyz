@@ -193,6 +193,7 @@ span>a{
     margin-top: 1rem;
 }
 .answer{
+    display: flex;
     max-height: 0;
     overflow: hidden;
 }
