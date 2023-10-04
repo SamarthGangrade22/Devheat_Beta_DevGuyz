@@ -157,14 +157,48 @@ span>a{
     grid-template-rows: repeat(6 , 200px);
     grid-auto-rows: 200px;    
 }
+.mymodal{
+    background-image: url(./images/ackground-which-says-ask-me-anything-with-color-using-only-black-white-grey--design-with-r.png);
+    background-size: cover;
+    background-attachment: fixed;
+    
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .box-2{ 
     grid-row: span 2;
+    display: fle;
+    justify-content: center;
+    align-items: center;
+}
+.user-details{
+    width: 10rem;
 }
 .box-4, .box-6 , .box-8, .box-10{
     background-color: white;
 }
 
-
+.box-1{
+    display: flex;
+    flex-direction: column;
+}
+.question{
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+.user-details{
+    margin-top: 2rem;
+    margin-left: 2rem;
+    width: 45rem;
+    
+}
+.upvote{
+    margin-top: 1.6rem;
+    margin-left: 1.6rem;
+}
 
 
 @media(max-width:987px){
@@ -193,28 +227,35 @@ span>a{
 
 /* Modal Content */
 .modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fefefe;
     margin: auto;
     padding: 20px;
+    background-image: linear-gradient(rgb(253, 249, 249),rgb(116, 116, 116));
     border: 1px solid #888;
     width: 80%;
+    height: 80%;
 }
   
   /* The Close Button */
 .close {
-    color: #aaaaaa;
+    color: #352828;
     float: right;
-    font-size: 28px;
+    text-align: right;
+    font-size: 38px;
     font-weight: bold;
 }
   
 .close:hover,
 .close:focus {
-    color: #000;
+    color: #bc0c0c;
     text-decoration: none;
     cursor: pointer;
 }
-.register{
-    display: grid;
-    grid-template-columns: 5fr 1fr;
+#regis_btn{
+    
+    border-radius: 10px;
+    color: rgb(23, 109, 109);
 }

@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
 </link>  
   </head>
-  <body data-bs-theme="dark">
+  <body data-bs-theme="light">
   
   <nav id="" class="navbar  navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid ">
@@ -228,26 +228,49 @@
 
       <div class="display-area" style="background-color: lightgrey;">
       <div class="grid-container" >
-        <div class="grid box-1" style="background-color: white;">1</div>
-        <div class="grid box-2" style="background-color: white;">2
-          <button id="myBtn">Open Modal</button>
-          <div id="myModal" class="modal">
+        <div class="grid box-1" style="background-color: white;">
+          <div class="user-details">
+            <img src="images/a-logo-for-website-having-Q-of-color-red--with-background-of--brain-border.png" alt="Bootstrap" width="35" height="35">
+            <span>robbin@gmail.com</span> 
+            <div style="display: inline-block; margin-left: 2rem; font-size: small;"> 28mins ago</div>
+          </div>
+          <div class="question">
+            <h2 style="display: inline-block;">
+             <span style="border: 1px solid black;background-color: black;font-weight: 200; color: white; border-radius: 15%;font-size: 1.6rem; margin-right: 1rem;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Ques</span>what is javascript?
+            </h2>
+            <button style="display: inline-block; margin-left: 20rem; height: 30px; border: 1px solid black; border-radius: 20%;" class="answer">
+              <p>See Answer</p>
+            </button>
+          </div>
+          <div class="upvote">
+            <div style="display: inline-block;margin-left: .6rem; margin-right: 1.4rem;"><button style="box-shadow: none; border: 1px solid black;border-radius: 20%;"><i class="fa fa-arrow-up" aria-hidden="true"></i>Upvote</button></div>
+            <div style="display: inline-block;"><button style="box-shadow: none; border: 1px solid black;border-radius: 20%;"><i class="fa-solid fa-arrow-down"></i>Downvote</button></div>
+          </div>
+        </div>
+        <div class="grid box-2" style="background-color: white;">
+          <div class="mymodal">
+            <button id="myBtn" style="border: 1px solid black; border-radius: 10px; font-size: 1.8rem;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: ;">Ask A Question</button>
+            <div id="myModal" class="modal">
     
             <!-- Modal content -->
             <div class="modal-content">
               <span class="close">&times;</span>
-              <p>Some text in the Modal..</p>
+              <p>Add a Question</p>
               <!-- <input type="text"> -->
-              <form action="/auth/home/register" method="post">
-                <label for="inputField">Enter a string:</label>
-                <input type="text" id="inputField" name="question" oninput="countCharacters()">
-                <div class="register">
-                  <p>Number of characters entered: <span id="charCount">0</span></p>
-                  <input type="submit" id="regis_btn" value="register">
-                </div>
+              <form style="margin-top:20px ;" action="/auth/home/register" method="post" class="myform">
+                <label style="margin: 20px 20px;" for="inputField">Enter Your Question</label>
+                <input type="text" id="inputField" name="question" oninput="countCharacters() " placeholder="Enter Your Question">
+                
+                <p>Number of characters entered: <span id="charCount">0</span></p>
+                <input style="margin-left: 240px;"  type="submit" id="regis_btn" value="Submit">
+                
               </form>
             </div>
           
+            </div>
+          </div>
+          <div class="user-detail">
+            <h1>hola</h1>
           </div>
         </div>
         <div class="grid box-3 " style="background-color: white;">3</div>
