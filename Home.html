@@ -248,8 +248,8 @@
           </div></div>
           <div class="upvote ">
             <div>
-              <div style="display: inline-block;margin-left: .6rem; margin-right: 1.4rem;"><button style="box-shadow: none; border: 1px solid black;border-radius: 20%;"><i class="fa fa-arrow-up" aria-hidden="true"></i>Upvote</button></div>
-              <div style="display: inline-block;"><button style="box-shadow: none; border: 1px solid black;border-radius: 20%;"><i class="fa-solid fa-arrow-down"></i>Downvote</button></div>
+              <div style="display: inline-block;margin-left: .6rem; margin-right: 1.4rem;"><button id="vote" style="box-shadow: none; border: 1px solid black;border-radius: 20%;"><i id="up" class="fa fa-arrow-up" aria-hidden="true"></i>Upvote</button></div>
+              <div style="display: inline-block;"><button id="dvote" style="box-shadow: none; border: 1px solid black;border-radius: 20%;"><i id="down" class="fa-solid fa-arrow-down"></i>Downvote</button></div>
             </div>
             <div>
               <button style="border: 1px solid black; border-radius: 20%;">
@@ -333,7 +333,16 @@
             // Display the character count
             document.getElementById("charCount").textContent = charCount;
         }
-    
+    let count=0;
+    let dcount=0;
+    document.getElementById("vote").onclick= function(){
+      count+=1;
+      document.getElementById("up").innerHTML=count;
+    }
+    document.getElementById("dvote").onclick= function(){
+      dcount-=1;
+      document.getElementById("down").innerHTML=dcount;
+    }
     </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
