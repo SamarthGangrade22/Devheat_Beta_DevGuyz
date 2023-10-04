@@ -234,22 +234,33 @@
             <span>robbin@gmail.com</span> 
             <div style="display: inline-block; margin-left: 2rem; font-size: small;"> 28mins ago</div>
           </div>
+          <div class="faq">
           <div class="question">
-            <h2 style="display: inline-block;">
-             <span style="border: 1px solid black;background-color: black;font-weight: 200; color: white; border-radius: 15%;font-size: 1.6rem; margin-right: 1rem;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Ques</span>what is javascript?
-            </h2>
-            <button style="display: inline-block; margin-left: 20rem; height: 30px; border: 1px solid black; border-radius: 20%;" class="answer">
-              <p>See Answer</p>
-            </button>
+            <h3 style="display: inline-block;font-size: 1.8rem;">
+             <span style="border: 1px solid black;background-color: black;font-weight: 200; color: white; border-radius: 15%;font-size: 1.2rem; margin-right: 1rem;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Ques</span>what is javascript?
+            </h3>
+            <button style="display: inline-block; margin-left: 20rem; min-height: 30px ; border: 1px solid black; border-radius: 20%;" class="answer"> See Answer</button>
           </div>
-          <div class="upvote">
-            <div style="display: inline-block;margin-left: .6rem; margin-right: 1.4rem;"><button style="box-shadow: none; border: 1px solid black;border-radius: 20%;"><i class="fa fa-arrow-up" aria-hidden="true"></i>Upvote</button></div>
-            <div style="display: inline-block;"><button style="box-shadow: none; border: 1px solid black;border-radius: 20%;"><i class="fa-solid fa-arrow-down"></i>Downvote</button></div>
+          <div class="answer">
+            <p>
+               <span style="border: 1px solid black;background-color: black;font-weight:50; color: white; border-radius: 15%;font-size: 1rem; margin-right: 1rem;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Ans:</span> javascript, often  abbreivated ass
+            </p>
+          </div></div>
+          <div class="upvote ">
+            <div>
+              <div style="display: inline-block;margin-left: .6rem; margin-right: 1.4rem;"><button style="box-shadow: none; border: 1px solid black;border-radius: 20%;"><i class="fa fa-arrow-up" aria-hidden="true"></i>Upvote</button></div>
+              <div style="display: inline-block;"><button style="box-shadow: none; border: 1px solid black;border-radius: 20%;"><i class="fa-solid fa-arrow-down"></i>Downvote</button></div>
+            </div>
+            <div>
+              <button style="border: 1px solid black; border-radius: 20%;">
+                Add your answer
+              </button>
+            </div>
           </div>
         </div>
         <div class="grid box-2" style="background-color: white;">
           <div class="mymodal">
-            <button id="myBtn" style="border: 1px solid black; border-radius: 10px; font-size: 1.8rem;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: ;">Ask A Question</button>
+            <button id="myBtn" style="border: 1px solid black; border-radius: 10px; font-size: 1.8rem;font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; ">Ask A Question</button>
             <div id="myModal" class="modal">
     
             <!-- Modal content -->
@@ -285,6 +296,13 @@
     </div>
   </main>
   <script src="index.js"></script>
+  <script>const faqs=document.querySelectorAll(".faq");
+
+    faqs.forEach(faq =>{
+        faq.addEventListener("click",()=>{
+            faq.classList.toggle("active"); 
+        })
+    })</script>
   <script>
     function myFunction() {
       var element = document.body;

@@ -154,7 +154,7 @@ span>a{
     
     margin-right: 1rem;
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(6 , 200px);
+    grid-template-rows: repeat(6 , 250px);
     grid-auto-rows: 200px;    
 }
 .mymodal{
@@ -186,8 +186,21 @@ span>a{
     flex-direction: column;
 }
 .question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-left: 2rem;
     margin-top: 1rem;
+}
+.answer{
+    max-height: 0;
+    overflow: hidden;
+}
+.answer p{
+    padding-top: .2rem;
+    line-height: 1.6;
+    font-size:1.2rem;
+    margin-left: 2rem;
 }
 .user-details{
     margin-top: 2rem;
@@ -196,10 +209,15 @@ span>a{
     
 }
 .upvote{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 1.6rem;
     margin-left: 1.6rem;
 }
-
+.faq.active .answer{
+    max-height: 40px;
+}
 
 @media(max-width:987px){
     .transform{
