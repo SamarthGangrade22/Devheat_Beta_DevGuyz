@@ -2,18 +2,20 @@ body{
     font-family: 'Urbanist', sans-serif;
     background-color: #264653;
     overflow-x: hidden;
+    background-image: url(./images/background-image-for-1800-x-1200-px-which-include-peoples-design-with-less-crowd-more-white-space.png);
 }
 
 
 body.light-mode {
-    background-color: #ffffff;
+    background-color: #264653;
     color: #000000;
 }
 
-body.dark-mode {
+body.dark-mode  {
     background-color: #000000;
     color: #ffffff;
 } 
+
 
 side-nav-button{
     display: flex;
@@ -70,7 +72,7 @@ app-side-nav{
     width: 250px;
     height: calc(100vh - 4rem);
     box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
-    background-color:#2a9d8f;
+    background-color:#22A699;
 }
 .side-nav-content{
     width: 14rem;
@@ -146,7 +148,6 @@ span>a{
 }
 .grid-container{
     position: relative;
-    size: fixe;
     display: grid;  
     gap: 10px;
     
@@ -168,23 +169,27 @@ span>a{
 
 .box-2{ 
     grid-row: span 2;
-    display: fle;
     justify-content: center;
     align-items: center;
 }
 .user-details{
     width: 10rem;
 }
-.box-4, .box-6 , .box-8, .box-10{
-    background-color: white;
+.box-1, .box-4 , .box-8, {
+    
 }
 .box-9,.box-7,.box-5{
-    background-color: rgba(255, 255, 255, 0);
+    background-color: transparent
 }
 
 .box-1{
     display: flex;
     flex-direction: column;
+}
+.grid{
+    border-radius: 20px 20px 20px 20px;
+    
+    font-family: 'Roboto', sans-serif;
 }
 .question{
     display: flex;
@@ -193,10 +198,87 @@ span>a{
     margin-left: 2rem;
     margin-top: 1rem;
 }
+.Answer {
+    padding-bottom:  2em;
+    font-size: 12px;
+    margin-bottom: 3px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: white;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease .0s;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  .Answer:hover {
+    background-color: #50D890;
+    box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+    color: #fff;
+    transform: translateY(-7px);
+  }
+  
+  .Answer:active {
+    transform: translateY(-1px);
+  }
+  /* From uiverse.io by @alshahwan */
+/* From uiverse.io by @alshahwan */
+.follow {
+    background-color: #fff;
+    border: 1px solid #0077b5;
+    padding: 5px;
+    position: relative;
+    width: 7.2em;
+    height: 2em;
+    transition: 0.5s;
+    font-size: 17px;
+    border-radius: 0.4em;
+  }
+  
+  .follow p {
+    position: absolute;
+    top: 0.4em;
+    left: 1.2em;
+    margin: 0;
+    padding: 0;
+    transition: .5s;
+    color: #0077b5;
+  }
+  
+  .follow svg {
+    position: absolute;
+    top: 0.45em;
+    right: 0.5em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff
+  }
+  
+  .follow:hover p {
+    left: 0.6em;
+    color: #fff
+  }
+  
+  .follow:hover svg {
+    opacity: 1;
+  }
+  
+  .follow:hover {
+    background-color: #0077b5;
+  }
+  
 .answer{
     display: flex;
     max-height: 0;
     overflow: hidden;
+    transition: max-height 1.2s;
 }
 .answer p{
     padding-top: .2rem;
@@ -206,11 +288,54 @@ span>a{
 }
 .user-details{
     display: flex;
+    align-items: center;
     margin-top: 2rem;
     margin-left: 2rem;
     width: 45rem;
     
 }
+.mybutton {
+    --color: #0077ff;
+    font-family: 'Bebas Neue', sans-serif;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  .mybutton::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  
+  .mybutton:hover {
+    color: white;
+  }
+  
+  .mybutton:before {
+    top: 100%;
+    left: 100%;
+    transition: .3s all;
+  }
+  
+  .mybutton:hover::before {
+    top: -30px;
+    left: -30px;
+  }
+  
 .upvote{
     display: flex;
     justify-content: space-between;
@@ -305,6 +430,7 @@ span>a{
     border: 2px solid #333; /* Border style */
     border-radius: 10px; /* Rounded corners */
     font-family: Arial, sans-serif; /* Font family */
+    max-height: 400px;
   }
 
   /* Styles for the modal content */
@@ -347,3 +473,10 @@ span>a{
     padding: 10px 20px;
     cursor: pointer;
   }
+.user-detail{
+    height: 22rem;
+    background-image: url(./images/wepik-export-20231005165941rIEE.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
