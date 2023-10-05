@@ -1,46 +1,56 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+  <title>Donate Us</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center; /* Horizontally center content */
+      align-items: center; /* Vertically center content */
+      min-height: 100vh; /* Ensure the page takes at least the full viewport height */
+      background-color: #f0f0f0;
+    }
 
-        <!--=============== BOXICONS ===============-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    .donate-box {
+      width: 300px;
+      background-color: #fff;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+    }
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+    h1 {
+      color: #333;
+      font-size: 24px;
+    }
 
-        <title>Responsive Modal Popup</title>
-    </head>
-    <body>
-        <section class="modal container">
-            <button class="modal__button" id="open-modal">
-                Open Modal
-            </button>
+    p {
+      color: #777;
+      font-size: 18px;
+    }
 
-            <div class="modal__container" id="modal-container">
-                <div class="modal__content">
-                    <div class="modal__close close-modal" title="Close">
-                        <i class='bx bx-x'></i>
-                    </div>
-
-                    <img src="assets/img/star-trophy.png" alt="" class="modal__img">
-
-                    <h1 class="modal__title">Good Job!</h1>
-                    <p class="modal__description">Click the button to close</p>
-
-                    <button class="modal__button modal__button-width">
-                        View status
-                    </button>
-
-                    <button class="modal__button-link close-modal">
-                        Close
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!--=============== MAIN JS ===============-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    /* Style for the donate button */
+    .donate-button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 15px 30px;
+      font-size: 20px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="donate-box">
+    <h1>Donate Us</h1>
+    <p>Your support helps us continue our work. Thank you for considering a donation!</p>
+    <!-- Replace the link below with your preferred donation service or form -->
+    <a href="https://www.example.com/donate" class="donate-button">Donate Now</a>
+  </div>
+</body>
 </html>
