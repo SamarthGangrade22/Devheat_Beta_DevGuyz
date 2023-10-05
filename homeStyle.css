@@ -4,17 +4,13 @@ body{
     overflow-x: hidden;
 }
 
-/* Light Mode Styles
-body.light-mode {
-    background-color: #ffffff;
-    color: #000000;
-}
+
 
 /* Dark Mode Styles */
 body.dark-mode {
     background-color: #000000;
     color: #ffffff;
-} */
+} 
 
 side-nav-button{
     display: flex;
