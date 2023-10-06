@@ -116,7 +116,9 @@ We are using **MongoDB** for all its databases needs .In this project the use of
 **Running Website demo(Mobile Recording)**
 ![](./images/App%20running.mp4)<br><br>
 **Screen recording**
-![](https://www.loom.com/share/65083fa4444245b2b631d7648dba97b6)<br><br>
+```sh
+https://www.loom.com/share/65083fa4444245b2b631d7648dba97b6
+```
 # Scalability
 
 
