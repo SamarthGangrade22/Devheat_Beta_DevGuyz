@@ -109,7 +109,14 @@ We are using **MongoDB** for all its databases needs .In this project the use of
 ![](./images/answer.png)<br><br>
 **Question Modal**
 ![](./images/ask_page.png)<br><br>
+**MongoDB**
+![](./images/siteusers.jpg)<br><br>
+![](./images/mongo.png)<br><br>
+
+**Running Website demo(Mobile Recording)**
+![](./images/App%20running.mp4)<br><br>
 # Scalability
+
 
 - To apply category and question related search thus allowing user to have ease in searching the data.
 
